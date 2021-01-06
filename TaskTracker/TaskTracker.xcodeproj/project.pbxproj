@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAF0B1A325A623CB00A44BA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1A225A623CB00A44BA9 /* AppDelegate.swift */; };
+		AAF0B1A525A623CB00A44BA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1A425A623CB00A44BA9 /* SceneDelegate.swift */; };
+		AAF0B1A725A623CB00A44BA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1A625A623CB00A44BA9 /* ViewController.swift */; };
+		AAF0B1AA25A623CB00A44BA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF0B1A825A623CB00A44BA9 /* Main.storyboard */; };
+		AAF0B1AC25A623CC00A44BA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF0B1AB25A623CC00A44BA9 /* Assets.xcassets */; };
+		AAF0B1AF25A623CC00A44BA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF0B1AD25A623CC00A44BA9 /* LaunchScreen.storyboard */; };
+		AAF0B1BA25A623CC00A44BA9 /* TaskTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1B925A623CC00A44BA9 /* TaskTrackerTests.swift */; };
+		AAF0B1C525A623CC00A44BA9 /* TaskTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1C425A623CC00A44BA9 /* TaskTrackerUITests.swift */; };
+		B33C6856204E172C034AA60C /* Pods_TaskTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5A97ABE9611C7638FA944D /* Pods_TaskTrackerTests.framework */; };
+		BCD75EB3DE6820F13260EA27 /* Pods_TaskTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A6848E0ED1E0DAF338D7AF /* Pods_TaskTracker.framework */; };
+		C67421E0DA98E482793E4962 /* Pods_TaskTracker_TaskTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415ADEA41E21F7631CCB6AEB /* Pods_TaskTracker_TaskTrackerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAF0B1B625A623CC00A44BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAF0B19725A623CB00A44BA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF0B19E25A623CB00A44BA9;
+			remoteInfo = TaskTracker;
+		};
+		AAF0B1C125A623CC00A44BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAF0B19725A623CB00A44BA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF0B19E25A623CB00A44BA9;
+			remoteInfo = TaskTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B9418BA165D71C0C2C295F2 /* Pods-TaskTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-TaskTrackerTests/Pods-TaskTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A32A868991A8A83FF79D327 /* Pods-TaskTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTracker.release.xcconfig"; path = "Target Support Files/Pods-TaskTracker/Pods-TaskTracker.release.xcconfig"; sourceTree = "<group>"; };
+		415ADEA41E21F7631CCB6AEB /* Pods_TaskTracker_TaskTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskTracker_TaskTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BFD987D07BF284DA6084E5 /* Pods-TaskTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-TaskTrackerTests/Pods-TaskTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E5A97ABE9611C7638FA944D /* Pods_TaskTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ABAD517A36763CB1026E89D /* Pods-TaskTracker-TaskTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTracker-TaskTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-TaskTracker-TaskTrackerUITests/Pods-TaskTracker-TaskTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9A6848E0ED1E0DAF338D7AF /* Pods_TaskTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF0B19F25A623CB00A44BA9 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF0B1A225A623CB00A44BA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAF0B1A425A623CB00A44BA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AAF0B1A625A623CB00A44BA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAF0B1A925A623CB00A44BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAF0B1AB25A623CC00A44BA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAF0B1AE25A623CC00A44BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAF0B1B025A623CC00A44BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF0B1B525A623CC00A44BA9 /* TaskTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF0B1B925A623CC00A44BA9 /* TaskTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTrackerTests.swift; sourceTree = "<group>"; };
+		AAF0B1BB25A623CC00A44BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF0B1C025A623CC00A44BA9 /* TaskTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF0B1C425A623CC00A44BA9 /* TaskTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTrackerUITests.swift; sourceTree = "<group>"; };
+		AAF0B1C625A623CC00A44BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB46EDABAA080AD0843D98C /* Pods-TaskTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTracker.debug.xcconfig"; path = "Target Support Files/Pods-TaskTracker/Pods-TaskTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		FE58FB4EAEE041B4852D74C0 /* Pods-TaskTracker-TaskTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTracker-TaskTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-TaskTracker-TaskTrackerUITests/Pods-TaskTracker-TaskTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAF0B19C25A623CB00A44BA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD75EB3DE6820F13260EA27 /* Pods_TaskTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF0B1B225A623CC00A44BA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33C6856204E172C034AA60C /* Pods_TaskTrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF0B1BD25A623CC00A44BA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67421E0DA98E482793E4962 /* Pods_TaskTracker_TaskTrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FC1651C712E9866DCE75E2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9A6848E0ED1E0DAF338D7AF /* Pods_TaskTracker.framework */,
+				415ADEA41E21F7631CCB6AEB /* Pods_TaskTracker_TaskTrackerUITests.framework */,
+				5E5A97ABE9611C7638FA944D /* Pods_TaskTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CA614C16D0E58AF98284172 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBB46EDABAA080AD0843D98C /* Pods-TaskTracker.debug.xcconfig */,
+				3A32A868991A8A83FF79D327 /* Pods-TaskTracker.release.xcconfig */,
+				6ABAD517A36763CB1026E89D /* Pods-TaskTracker-TaskTrackerUITests.debug.xcconfig */,
+				FE58FB4EAEE041B4852D74C0 /* Pods-TaskTracker-TaskTrackerUITests.release.xcconfig */,
+				44BFD987D07BF284DA6084E5 /* Pods-TaskTrackerTests.debug.xcconfig */,
+				0B9418BA165D71C0C2C295F2 /* Pods-TaskTrackerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AAF0B19625A623CB00A44BA9 = {
+			isa = PBXGroup;
+			children = (
+				AAF0B1A125A623CB00A44BA9 /* TaskTracker */,
+				AAF0B1B825A623CC00A44BA9 /* TaskTrackerTests */,
+				AAF0B1C325A623CC00A44BA9 /* TaskTrackerUITests */,
+				AAF0B1A025A623CB00A44BA9 /* Products */,
+				5CA614C16D0E58AF98284172 /* Pods */,
+				4FC1651C712E9866DCE75E2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AAF0B1A025A623CB00A44BA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0B19F25A623CB00A44BA9 /* TaskTracker.app */,
+				AAF0B1B525A623CC00A44BA9 /* TaskTrackerTests.xctest */,
+				AAF0B1C025A623CC00A44BA9 /* TaskTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAF0B1A125A623CB00A44BA9 /* TaskTracker */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0B1A225A623CB00A44BA9 /* AppDelegate.swift */,
+				AAF0B1A425A623CB00A44BA9 /* SceneDelegate.swift */,
+				AAF0B1A625A623CB00A44BA9 /* ViewController.swift */,
+				AAF0B1A825A623CB00A44BA9 /* Main.storyboard */,
+				AAF0B1AB25A623CC00A44BA9 /* Assets.xcassets */,
+				AAF0B1AD25A623CC00A44BA9 /* LaunchScreen.storyboard */,
+				AAF0B1B025A623CC00A44BA9 /* Info.plist */,
+			);
+			path = TaskTracker;
+			sourceTree = "<group>";
+		};
+		AAF0B1B825A623CC00A44BA9 /* TaskTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0B1B925A623CC00A44BA9 /* TaskTrackerTests.swift */,
+				AAF0B1BB25A623CC00A44BA9 /* Info.plist */,
+			);
+			path = TaskTrackerTests;
+			sourceTree = "<group>";
+		};
+		AAF0B1C325A623CC00A44BA9 /* TaskTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0B1C425A623CC00A44BA9 /* TaskTrackerUITests.swift */,
+				AAF0B1C625A623CC00A44BA9 /* Info.plist */,
+			);
+			path = TaskTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAF0B19E25A623CB00A44BA9 /* TaskTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF0B1C925A623CC00A44BA9 /* Build configuration list for PBXNativeTarget "TaskTracker" */;
+			buildPhases = (
+				91F63D5FF2C1FC58B857058A /* [CP] Check Pods Manifest.lock */,
+				AAF0B19B25A623CB00A44BA9 /* Sources */,
+				AAF0B19C25A623CB00A44BA9 /* Frameworks */,
+				AAF0B19D25A623CB00A44BA9 /* Resources */,
+				BB5573879AF643BB7AF2EC77 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaskTracker;
+			productName = TaskTracker;
+			productReference = AAF0B19F25A623CB00A44BA9 /* TaskTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAF0B1B425A623CC00A44BA9 /* TaskTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF0B1CC25A623CC00A44BA9 /* Build configuration list for PBXNativeTarget "TaskTrackerTests" */;
+			buildPhases = (
+				7BD14DD89C2786EF0B8490A8 /* [CP] Check Pods Manifest.lock */,
+				AAF0B1B125A623CC00A44BA9 /* Sources */,
+				AAF0B1B225A623CC00A44BA9 /* Frameworks */,
+				AAF0B1B325A623CC00A44BA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF0B1B725A623CC00A44BA9 /* PBXTargetDependency */,
+			);
+			name = TaskTrackerTests;
+			productName = TaskTrackerTests;
+			productReference = AAF0B1B525A623CC00A44BA9 /* TaskTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAF0B1BF25A623CC00A44BA9 /* TaskTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF0B1CF25A623CC00A44BA9 /* Build configuration list for PBXNativeTarget "TaskTrackerUITests" */;
+			buildPhases = (
+				896B6BB6BE9AB59BD52FB128 /* [CP] Check Pods Manifest.lock */,
+				AAF0B1BC25A623CC00A44BA9 /* Sources */,
+				AAF0B1BD25A623CC00A44BA9 /* Frameworks */,
+				AAF0B1BE25A623CC00A44BA9 /* Resources */,
+				BAE10D1BEEF0ED22839061EC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF0B1C225A623CC00A44BA9 /* PBXTargetDependency */,
+			);
+			name = TaskTrackerUITests;
+			productName = TaskTrackerUITests;
+			productReference = AAF0B1C025A623CC00A44BA9 /* TaskTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAF0B19725A623CB00A44BA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					AAF0B19E25A623CB00A44BA9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					AAF0B1B425A623CC00A44BA9 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = AAF0B19E25A623CB00A44BA9;
+					};
+					AAF0B1BF25A623CC00A44BA9 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = AAF0B19E25A623CB00A44BA9;
+					};
+				};
+			};
+			buildConfigurationList = AAF0B19A25A623CB00A44BA9 /* Build configuration list for PBXProject "TaskTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAF0B19625A623CB00A44BA9;
+			productRefGroup = AAF0B1A025A623CB00A44BA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAF0B19E25A623CB00A44BA9 /* TaskTracker */,
+				AAF0B1B425A623CC00A44BA9 /* TaskTrackerTests */,
+				AAF0B1BF25A623CC00A44BA9 /* TaskTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAF0B19D25A623CB00A44BA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF0B1AF25A623CC00A44BA9 /* LaunchScreen.storyboard in Resources */,
+				AAF0B1AC25A623CC00A44BA9 /* Assets.xcassets in Resources */,
+				AAF0B1AA25A623CB00A44BA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF0B1B325A623CC00A44BA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF0B1BE25A623CC00A44BA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BD14DD89C2786EF0B8490A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		896B6BB6BE9AB59BD52FB128 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskTracker-TaskTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91F63D5FF2C1FC58B857058A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE10D1BEEF0ED22839061EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskTracker-TaskTrackerUITests/Pods-TaskTracker-TaskTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskTracker-TaskTrackerUITests/Pods-TaskTracker-TaskTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskTracker-TaskTrackerUITests/Pods-TaskTracker-TaskTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB5573879AF643BB7AF2EC77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskTracker/Pods-TaskTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskTracker/Pods-TaskTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskTracker/Pods-TaskTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAF0B19B25A623CB00A44BA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF0B1A725A623CB00A44BA9 /* ViewController.swift in Sources */,
+				AAF0B1A325A623CB00A44BA9 /* AppDelegate.swift in Sources */,
+				AAF0B1A525A623CB00A44BA9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF0B1B125A623CC00A44BA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF0B1BA25A623CC00A44BA9 /* TaskTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF0B1BC25A623CC00A44BA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF0B1C525A623CC00A44BA9 /* TaskTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAF0B1B725A623CC00A44BA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF0B19E25A623CB00A44BA9 /* TaskTracker */;
+			targetProxy = AAF0B1B625A623CC00A44BA9 /* PBXContainerItemProxy */;
+		};
+		AAF0B1C225A623CC00A44BA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF0B19E25A623CB00A44BA9 /* TaskTracker */;
+			targetProxy = AAF0B1C125A623CC00A44BA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAF0B1A825A623CB00A44BA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAF0B1A925A623CB00A44BA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAF0B1AD25A623CC00A44BA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAF0B1AE25A623CC00A44BA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAF0B1C725A623CC00A44BA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAF0B1C825A623CC00A44BA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAF0B1CA25A623CC00A44BA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB46EDABAA080AD0843D98C /* Pods-TaskTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaskTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Harsha.TaskTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAF0B1CB25A623CC00A44BA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A32A868991A8A83FF79D327 /* Pods-TaskTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaskTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Harsha.TaskTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAF0B1CD25A623CC00A44BA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BFD987D07BF284DA6084E5 /* Pods-TaskTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaskTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Harsha.TaskTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskTracker.app/TaskTracker";
+			};
+			name = Debug;
+		};
+		AAF0B1CE25A623CC00A44BA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9418BA165D71C0C2C295F2 /* Pods-TaskTrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaskTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Harsha.TaskTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskTracker.app/TaskTracker";
+			};
+			name = Release;
+		};
+		AAF0B1D025A623CC00A44BA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ABAD517A36763CB1026E89D /* Pods-TaskTracker-TaskTrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaskTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Harsha.TaskTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaskTracker;
+			};
+			name = Debug;
+		};
+		AAF0B1D125A623CC00A44BA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE58FB4EAEE041B4852D74C0 /* Pods-TaskTracker-TaskTrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaskTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Harsha.TaskTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaskTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAF0B19A25A623CB00A44BA9 /* Build configuration list for PBXProject "TaskTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF0B1C725A623CC00A44BA9 /* Debug */,
+				AAF0B1C825A623CC00A44BA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF0B1C925A623CC00A44BA9 /* Build configuration list for PBXNativeTarget "TaskTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF0B1CA25A623CC00A44BA9 /* Debug */,
+				AAF0B1CB25A623CC00A44BA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF0B1CC25A623CC00A44BA9 /* Build configuration list for PBXNativeTarget "TaskTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF0B1CD25A623CC00A44BA9 /* Debug */,
+				AAF0B1CE25A623CC00A44BA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF0B1CF25A623CC00A44BA9 /* Build configuration list for PBXNativeTarget "TaskTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF0B1D025A623CC00A44BA9 /* Debug */,
+				AAF0B1D125A623CC00A44BA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAF0B19725A623CB00A44BA9 /* Project object */;
+}

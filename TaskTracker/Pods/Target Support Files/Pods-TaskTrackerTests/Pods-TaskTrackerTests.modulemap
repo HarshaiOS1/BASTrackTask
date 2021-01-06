@@ -1,0 +1,6 @@
+framework module Pods_TaskTrackerTests {
+  umbrella header "Pods-TaskTrackerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
