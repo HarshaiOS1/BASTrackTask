@@ -132,9 +132,9 @@ extension Network {
             
             // request = NSMutableURLRequest(url: components.url!, cachePolicy: req.cachePolicy, timeoutInterval: req.timeout) as URLRequest
             request = URLRequest(url: components.url!, cachePolicy: req.cachePolicy, timeoutInterval: req.timeout)
-
+            if !(req.body?.isEmpty ?? true) {
             let body = try? JSONSerialization.data(withJSONObject: req.body as Any, options: .prettyPrinted)
-            request?.httpBody = body
+                request?.httpBody = body}
             
             let headers = [ "Content-Type": "application/json" ]
             request?.allHTTPHeaderFields = headers

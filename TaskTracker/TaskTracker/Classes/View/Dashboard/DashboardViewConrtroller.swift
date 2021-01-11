@@ -116,8 +116,21 @@ extension DashboardViewContrtoller: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteItem = UIContextualAction(style: .destructive, title: "DELETE") {  (contextualAction, view, boolValue) in
-            //Code I want to do here
+        let deleteItem = UIContextualAction(style: .destructive, title: "DELETE") {[weak self] (contextualAction, view, boolValue) in
+            CustomActivityIndicator.instance.showLoaderView()
+            var taskID = ""
+            if indexPath.section == 0 {
+                taskID = self?.dashboardViewModel.openTaskData[indexPath.row].id ?? ""
+            } else {
+                taskID = self?.dashboardViewModel.completedTaskData[indexPath.row].id ?? ""
+            }
+            self?.dashboardViewModel.deletetTask(taskId: taskID) { (isUpdated, errorMessage) in
+                if isUpdated{
+                    self?.getTableData()
+                } else {
+                    Utils().showAlert(title: "Error", description: "Error Updating task status", buttonTitle:"OK", sender: self!)
+                }
+            }
         }
         deleteItem.backgroundColor = UIColor.red
         let swipeActions = UISwipeActionsConfiguration(actions: [deleteItem])
