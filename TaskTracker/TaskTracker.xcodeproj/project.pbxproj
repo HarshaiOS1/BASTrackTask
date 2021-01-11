@@ -3,18 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA3F02A525ACA9A8007FCE41 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F02A425ACA9A8007FCE41 /* LoginModel.swift */; };
+		AA3F02AA25ACAA1B007FCE41 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F02A925ACAA1B007FCE41 /* LoginViewModel.swift */; };
+		AA3F02BB25ACC517007FCE41 /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F02B925ACC517007FCE41 /* CustomActivityIndicator.swift */; };
+		AA3F02BC25ACC517007FCE41 /* Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = AA3F02BA25ACC517007FCE41 /* Loader.json */; };
+		AA3F02C125ACC5F6007FCE41 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F02C025ACC5F6007FCE41 /* Utils.swift */; };
 		AAF0B1A325A623CB00A44BA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1A225A623CB00A44BA9 /* AppDelegate.swift */; };
 		AAF0B1A525A623CB00A44BA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1A425A623CB00A44BA9 /* SceneDelegate.swift */; };
-		AAF0B1A725A623CB00A44BA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1A625A623CB00A44BA9 /* ViewController.swift */; };
+		AAF0B1A725A623CB00A44BA9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1A625A623CB00A44BA9 /* LoginViewController.swift */; };
 		AAF0B1AA25A623CB00A44BA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF0B1A825A623CB00A44BA9 /* Main.storyboard */; };
 		AAF0B1AC25A623CC00A44BA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF0B1AB25A623CC00A44BA9 /* Assets.xcassets */; };
 		AAF0B1AF25A623CC00A44BA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF0B1AD25A623CC00A44BA9 /* LaunchScreen.storyboard */; };
 		AAF0B1BA25A623CC00A44BA9 /* TaskTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1B925A623CC00A44BA9 /* TaskTrackerTests.swift */; };
 		AAF0B1C525A623CC00A44BA9 /* TaskTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1C425A623CC00A44BA9 /* TaskTrackerUITests.swift */; };
+		AAF0B1E925A629F400A44BA9 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1E825A629F400A44BA9 /* NetworkConstants.swift */; };
+		AAF0B1F225A629FF00A44BA9 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1ED25A629FF00A44BA9 /* ReachabilityManager.swift */; };
+		AAF0B1F325A629FF00A44BA9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1EE25A629FF00A44BA9 /* Network.swift */; };
+		AAF0B1F425A629FF00A44BA9 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1EF25A629FF00A44BA9 /* NetworkLogger.swift */; };
+		AAF0B1F525A629FF00A44BA9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1F025A629FF00A44BA9 /* Reachability.swift */; };
+		AAF0B1F625A629FF00A44BA9 /* BasRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1F125A629FF00A44BA9 /* BasRequest.swift */; };
 		B33C6856204E172C034AA60C /* Pods_TaskTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5A97ABE9611C7638FA944D /* Pods_TaskTrackerTests.framework */; };
 		BCD75EB3DE6820F13260EA27 /* Pods_TaskTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A6848E0ED1E0DAF338D7AF /* Pods_TaskTracker.framework */; };
 		C67421E0DA98E482793E4962 /* Pods_TaskTracker_TaskTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415ADEA41E21F7631CCB6AEB /* Pods_TaskTracker_TaskTrackerUITests.framework */; };
@@ -45,10 +56,15 @@
 		5E5A97ABE9611C7638FA944D /* Pods_TaskTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABAD517A36763CB1026E89D /* Pods-TaskTracker-TaskTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTracker-TaskTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-TaskTracker-TaskTrackerUITests/Pods-TaskTracker-TaskTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9A6848E0ED1E0DAF338D7AF /* Pods_TaskTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3F02A425ACA9A8007FCE41 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		AA3F02A925ACAA1B007FCE41 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AA3F02B925ACC517007FCE41 /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
+		AA3F02BA25ACC517007FCE41 /* Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loader.json; sourceTree = "<group>"; };
+		AA3F02C025ACC5F6007FCE41 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		AAF0B19F25A623CB00A44BA9 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF0B1A225A623CB00A44BA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF0B1A425A623CB00A44BA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AAF0B1A625A623CB00A44BA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAF0B1A625A623CB00A44BA9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AAF0B1A925A623CB00A44BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAF0B1AB25A623CC00A44BA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAF0B1AE25A623CC00A44BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +75,12 @@
 		AAF0B1C025A623CC00A44BA9 /* TaskTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF0B1C425A623CC00A44BA9 /* TaskTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTrackerUITests.swift; sourceTree = "<group>"; };
 		AAF0B1C625A623CC00A44BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF0B1E825A629F400A44BA9 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		AAF0B1ED25A629FF00A44BA9 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		AAF0B1EE25A629FF00A44BA9 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		AAF0B1EF25A629FF00A44BA9 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		AAF0B1F025A629FF00A44BA9 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		AAF0B1F125A629FF00A44BA9 /* BasRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasRequest.swift; sourceTree = "<group>"; };
 		CBB46EDABAA080AD0843D98C /* Pods-TaskTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTracker.debug.xcconfig"; path = "Target Support Files/Pods-TaskTracker/Pods-TaskTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		FE58FB4EAEE041B4852D74C0 /* Pods-TaskTracker-TaskTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTracker-TaskTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-TaskTracker-TaskTrackerUITests/Pods-TaskTracker-TaskTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,9 +133,42 @@
 				44BFD987D07BF284DA6084E5 /* Pods-TaskTrackerTests.debug.xcconfig */,
 				0B9418BA165D71C0C2C295F2 /* Pods-TaskTrackerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		AA3F028D25AC802B007FCE41 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0B1A625A623CB00A44BA9 /* LoginViewController.swift */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		AA3F028E25AC8037007FCE41 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				AA3F02A925ACAA1B007FCE41 /* LoginViewModel.swift */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		AA3F028F25AC803E007FCE41 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				AA3F02A425ACA9A8007FCE41 /* LoginModel.swift */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		AA3F02B825ACC517007FCE41 /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				AA3F02B925ACC517007FCE41 /* CustomActivityIndicator.swift */,
+				AA3F02BA25ACC517007FCE41 /* Loader.json */,
+			);
+			name = ActivityIndicator;
+			path = TaskTracker/ActivityIndicator;
+			sourceTree = SOURCE_ROOT;
 		};
 		AAF0B19625A623CB00A44BA9 = {
 			isa = PBXGroup;
@@ -140,12 +195,10 @@
 		AAF0B1A125A623CB00A44BA9 /* TaskTracker */ = {
 			isa = PBXGroup;
 			children = (
-				AAF0B1A225A623CB00A44BA9 /* AppDelegate.swift */,
-				AAF0B1A425A623CB00A44BA9 /* SceneDelegate.swift */,
-				AAF0B1A625A623CB00A44BA9 /* ViewController.swift */,
-				AAF0B1A825A623CB00A44BA9 /* Main.storyboard */,
+				AAF0B1DC25A6267C00A44BA9 /* AppDelegate */,
+				AAF0B1DD25A6268500A44BA9 /* Classes */,
+				AAF0B1DE25A626A100A44BA9 /* Resources */,
 				AAF0B1AB25A623CC00A44BA9 /* Assets.xcassets */,
-				AAF0B1AD25A623CC00A44BA9 /* LaunchScreen.storyboard */,
 				AAF0B1B025A623CC00A44BA9 /* Info.plist */,
 			);
 			path = TaskTracker;
@@ -167,6 +220,90 @@
 				AAF0B1C625A623CC00A44BA9 /* Info.plist */,
 			);
 			path = TaskTrackerUITests;
+			sourceTree = "<group>";
+		};
+		AAF0B1DC25A6267C00A44BA9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0B1A225A623CB00A44BA9 /* AppDelegate.swift */,
+				AAF0B1A425A623CB00A44BA9 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AAF0B1DD25A6268500A44BA9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0B1E725A6270D00A44BA9 /* Model */,
+				AAF0B1E625A626FF00A44BA9 /* ViewModel */,
+				AAF0B1E525A626F900A44BA9 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AAF0B1DE25A626A100A44BA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA3F02B825ACC517007FCE41 /* ActivityIndicator */,
+				AAF0B1E425A626ED00A44BA9 /* Nework */,
+				AAF0B1E325A626DC00A44BA9 /* Utils */,
+				AAF0B1E225A626D100A44BA9 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AAF0B1E225A626D100A44BA9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0B1AD25A623CC00A44BA9 /* LaunchScreen.storyboard */,
+				AAF0B1A825A623CB00A44BA9 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AAF0B1E325A626DC00A44BA9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0B1E825A629F400A44BA9 /* NetworkConstants.swift */,
+				AA3F02C025ACC5F6007FCE41 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AAF0B1E425A626ED00A44BA9 /* Nework */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0B1EE25A629FF00A44BA9 /* Network.swift */,
+				AAF0B1EF25A629FF00A44BA9 /* NetworkLogger.swift */,
+				AAF0B1F025A629FF00A44BA9 /* Reachability.swift */,
+				AAF0B1ED25A629FF00A44BA9 /* ReachabilityManager.swift */,
+				AAF0B1F125A629FF00A44BA9 /* BasRequest.swift */,
+			);
+			path = Nework;
+			sourceTree = "<group>";
+		};
+		AAF0B1E525A626F900A44BA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA3F028D25AC802B007FCE41 /* LoginModule */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAF0B1E625A626FF00A44BA9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA3F028E25AC8037007FCE41 /* LoginModule */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AAF0B1E725A6270D00A44BA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA3F028F25AC803E007FCE41 /* LoginModule */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +416,7 @@
 			files = (
 				AAF0B1AF25A623CC00A44BA9 /* LaunchScreen.storyboard in Resources */,
 				AAF0B1AC25A623CC00A44BA9 /* Assets.xcassets in Resources */,
+				AA3F02BC25ACC517007FCE41 /* Loader.json in Resources */,
 				AAF0B1AA25A623CB00A44BA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,9 +545,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF0B1A725A623CB00A44BA9 /* ViewController.swift in Sources */,
+				AAF0B1F425A629FF00A44BA9 /* NetworkLogger.swift in Sources */,
+				AAF0B1E925A629F400A44BA9 /* NetworkConstants.swift in Sources */,
+				AA3F02AA25ACAA1B007FCE41 /* LoginViewModel.swift in Sources */,
+				AAF0B1A725A623CB00A44BA9 /* LoginViewController.swift in Sources */,
+				AAF0B1F325A629FF00A44BA9 /* Network.swift in Sources */,
+				AA3F02C125ACC5F6007FCE41 /* Utils.swift in Sources */,
+				AA3F02BB25ACC517007FCE41 /* CustomActivityIndicator.swift in Sources */,
 				AAF0B1A325A623CB00A44BA9 /* AppDelegate.swift in Sources */,
 				AAF0B1A525A623CB00A44BA9 /* SceneDelegate.swift in Sources */,
+				AA3F02A525ACA9A8007FCE41 /* LoginModel.swift in Sources */,
+				AAF0B1F525A629FF00A44BA9 /* Reachability.swift in Sources */,
+				AAF0B1F225A629FF00A44BA9 /* ReachabilityManager.swift in Sources */,
+				AAF0B1F625A629FF00A44BA9 /* BasRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
