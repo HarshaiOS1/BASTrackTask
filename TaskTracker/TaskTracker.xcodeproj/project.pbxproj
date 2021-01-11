@@ -154,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				AA3F02A925ACAA1B007FCE41 /* LoginViewModel.swift */,
-				AA3F02D025ACDBD4007FCE41 /* DashboardViewModel.swift */,
 			);
 			path = LoginModule;
 			sourceTree = "<group>";
@@ -188,6 +187,7 @@
 		AA3F02C625ACCDE6007FCE41 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				AA3F02D025ACDBD4007FCE41 /* DashboardViewModel.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";

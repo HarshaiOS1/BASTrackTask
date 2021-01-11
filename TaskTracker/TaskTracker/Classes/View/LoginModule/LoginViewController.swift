@@ -8,17 +8,74 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    @IBOutlet weak var segmentController: UISegmentedControl!
+    @IBOutlet weak var segmentController: UISegmentedControl!{
+        didSet{
+            segmentController.layer.cornerRadius = 5
+            segmentController.layer.borderWidth = 1
+            segmentController.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var registrationView: UIView!
-    @IBOutlet weak var loginEmailTextField: UITextField!
     
-    @IBOutlet weak var loginPasswordTextField: UITextField!
-    @IBOutlet weak var registerEmailTextField: UITextField!
-    @IBOutlet weak var registerPasswordTextField: UITextField!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var agePasswordTextField: UITextField!
+    @IBOutlet weak var loginEmailTextField: UITextField!{
+        didSet{
+            loginEmailTextField.layer.cornerRadius = 5
+            loginEmailTextField.layer.borderWidth = 1
+            loginEmailTextField.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
+    @IBOutlet weak var loginPasswordTextField: UITextField!{
+        didSet{
+            loginPasswordTextField.layer.cornerRadius = 5
+            loginPasswordTextField.layer.borderWidth = 1
+            loginPasswordTextField.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
     
+    @IBOutlet weak var registerEmailTextField: UITextField!{
+        didSet{
+            registerEmailTextField.layer.cornerRadius = 5
+            registerEmailTextField.layer.borderWidth = 1
+            registerEmailTextField.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
+    @IBOutlet weak var registerPasswordTextField: UITextField!{
+        didSet{
+            registerPasswordTextField.layer.cornerRadius = 5
+            registerPasswordTextField.layer.borderWidth = 1
+            registerPasswordTextField.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
+    @IBOutlet weak var nameTextField: UITextField!{
+        didSet{
+            nameTextField.layer.cornerRadius = 5
+            nameTextField.layer.borderWidth = 1
+            nameTextField.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
+    @IBOutlet weak var agePasswordTextField: UITextField!{
+        didSet{
+            agePasswordTextField.layer.cornerRadius = 5
+            agePasswordTextField.layer.borderWidth = 1
+            agePasswordTextField.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
+    
+    @IBOutlet weak var loginButton: UIButton! {
+        didSet{
+            loginButton.layer.cornerRadius = 5
+            loginButton.layer.borderWidth = 1
+            loginButton.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
+    @IBOutlet weak var registerButton: UIButton!{
+        didSet{
+            registerButton.layer.cornerRadius = 5
+            registerButton.layer.borderWidth = 1
+            registerButton.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
     var logInViewModel = LogInViewModel()
     
     override func viewDidLoad() {

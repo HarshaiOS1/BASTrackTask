@@ -56,7 +56,30 @@ class DashboardViewContrtoller: UIViewController {
         }
     }
     
-    @objc func addTask() { }
+    @objc func addTask() {
+        let alertController = UIAlertController(title: "Add New Task", message: "", preferredStyle: UIAlertController.Style.alert)
+        alertController.addTextField { (textField : UITextField!) -> Void in
+            textField.placeholder = "Enter Task Title here"
+        }
+        let saveAction = UIAlertAction(title: "Save", style: UIAlertAction.Style.default, handler: { alert -> Void in
+            CustomActivityIndicator.instance.showLoaderView()
+            let firstTextField = alertController.textFields![0] as UITextField
+            self.dashboardViewModel.addTask(description: firstTextField.text ?? "") { (isAdded, data) in
+                if isAdded {
+                    self.getTableData()
+                } else {
+                    Utils().showAlert(title: "Error", description: "Error Deleting task", buttonTitle:"OK", sender: self)
+                }
+            }
+            
+        })
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: {
+                                            (action : UIAlertAction!) -> Void in })
+        alertController.addAction(cancelAction)
+        alertController.addAction(saveAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
     
     @objc
     private func hideSection(sender: UIButton) {
@@ -68,11 +91,6 @@ class DashboardViewContrtoller: UIViewController {
             openTableView.reloadSections([1], with: UITableView.RowAnimation.automatic)
         }
     }
-    
-    private func editTasks(){
-        
-    }
-    
     
     deinit {
         print("Deinit: DashBoardMainViewController")
@@ -128,7 +146,7 @@ extension DashboardViewContrtoller: UITableViewDelegate, UITableViewDataSource {
                 if isUpdated{
                     self?.getTableData()
                 } else {
-                    Utils().showAlert(title: "Error", description: "Error Updating task status", buttonTitle:"OK", sender: self!)
+                    Utils().showAlert(title: "Error", description: "Error Deleting task", buttonTitle:"OK", sender: self!)
                 }
             }
         }
