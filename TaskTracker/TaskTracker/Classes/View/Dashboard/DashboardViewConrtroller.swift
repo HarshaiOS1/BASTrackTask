@@ -126,17 +126,31 @@ extension DashboardViewContrtoller: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         if indexPath.section == 0 {
-            let markAsdoneItem = UIContextualAction(style: .destructive, title: "Mark as Done") {  (contextualAction, view, boolValue) in
-                print(indexPath)
+            let markAsdoneItem = UIContextualAction(style: .destructive, title: "Mark as Done") {[weak self] (contextualAction, view, boolValue) in
+                CustomActivityIndicator.instance.showLoaderView()
+                self?.dashboardViewModel.editTask(completed: true, taskId: self?.dashboardViewModel.openTaskData[indexPath.row].id ?? "") { (isUpdated, errorMessage) in
+                    if isUpdated{
+                        self?.getTableData()
+                    } else {
+                        Utils().showAlert(title: "Error", description: "Error Updating task status", buttonTitle:"OK", sender: self!)
+                    }
+                }
             }
             markAsdoneItem.backgroundColor = UIColor.green
             let swipeActions = UISwipeActionsConfiguration(actions: [markAsdoneItem])
             return swipeActions
         } else {
-            let markAsdoneItem = UIContextualAction(style: .destructive, title: "Mark as Open") {  (contextualAction, view, boolValue) in
-                print(indexPath)
+            let markAsdoneItem = UIContextualAction(style: .destructive, title: "Mark as Open") {[weak self] (contextualAction, view, boolValue) in
+                CustomActivityIndicator.instance.showLoaderView()
+                self?.dashboardViewModel.editTask(completed: false, taskId: self?.dashboardViewModel.completedTaskData[indexPath.row].id ?? "") { (isUpdated, errorMessage) in
+                    if isUpdated{
+                        self?.getTableData()
+                    } else {
+                        Utils().showAlert(title: "Error", description: "Error Updating task status", buttonTitle:"OK", sender: self!)
+                    }
+                }
             }
-            markAsdoneItem.backgroundColor = UIColor.yellow
+            markAsdoneItem.backgroundColor = UIColor.brown
             let swipeActions = UISwipeActionsConfiguration(actions: [markAsdoneItem])
             return swipeActions
         }

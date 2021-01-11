@@ -14,7 +14,7 @@ struct NetworkConstants {
         static let registerPath = "/user/register"
         static let loginPath = "user/login"
         static let logoutPath = "user/logout"
-        static let getTaskPath = "/task"
+        static let getTaskPath = "task/"
         static let extraTimeIntervel    = "60"
     }
     
