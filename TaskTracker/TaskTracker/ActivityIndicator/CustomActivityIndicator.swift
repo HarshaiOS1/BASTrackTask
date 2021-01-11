@@ -2,7 +2,7 @@
 //  CustomActivityIndicator.swift
 //  TaskTracker
 //
-//  Created by wfh on 11/01/21.
+//  Created by Harsha on 11/01/21.
 //
 
 // Using Lottie Animations for Activity Indicator https://lottiefiles.com

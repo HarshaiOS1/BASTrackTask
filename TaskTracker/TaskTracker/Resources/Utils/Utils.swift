@@ -2,7 +2,7 @@
 //  Utils.swift
 //  TaskTracker
 //
-//  Created by wfh on 11/01/21.
+//  Created by Harsha on 11/01/21.
 //
 
 import Foundation
@@ -16,4 +16,9 @@ public struct Utils{
         sender.present(alert, animated: true, completion: nil)
     }
     
+}
+
+//Store key name
+struct UserDefaultsKey {
+    static let TOKEN = "usertoken"
 }

@@ -12,6 +12,9 @@
 		AA3F02BB25ACC517007FCE41 /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F02B925ACC517007FCE41 /* CustomActivityIndicator.swift */; };
 		AA3F02BC25ACC517007FCE41 /* Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = AA3F02BA25ACC517007FCE41 /* Loader.json */; };
 		AA3F02C125ACC5F6007FCE41 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F02C025ACC5F6007FCE41 /* Utils.swift */; };
+		AA3F02C925ACCE02007FCE41 /* DashboardViewConrtroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F02C825ACCE02007FCE41 /* DashboardViewConrtroller.swift */; };
+		AA3F02D125ACDBD4007FCE41 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F02D025ACDBD4007FCE41 /* DashboardViewModel.swift */; };
+		AA3F02E025ACF5EB007FCE41 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F02DF25ACF5EB007FCE41 /* TaskModel.swift */; };
 		AAF0B1A325A623CB00A44BA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1A225A623CB00A44BA9 /* AppDelegate.swift */; };
 		AAF0B1A525A623CB00A44BA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1A425A623CB00A44BA9 /* SceneDelegate.swift */; };
 		AAF0B1A725A623CB00A44BA9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0B1A625A623CB00A44BA9 /* LoginViewController.swift */; };
@@ -61,6 +64,9 @@
 		AA3F02B925ACC517007FCE41 /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
 		AA3F02BA25ACC517007FCE41 /* Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loader.json; sourceTree = "<group>"; };
 		AA3F02C025ACC5F6007FCE41 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AA3F02C825ACCE02007FCE41 /* DashboardViewConrtroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewConrtroller.swift; sourceTree = "<group>"; };
+		AA3F02D025ACDBD4007FCE41 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		AA3F02DF25ACF5EB007FCE41 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		AAF0B19F25A623CB00A44BA9 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF0B1A225A623CB00A44BA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF0B1A425A623CB00A44BA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				AA3F02A925ACAA1B007FCE41 /* LoginViewModel.swift */,
+				AA3F02D025ACDBD4007FCE41 /* DashboardViewModel.swift */,
 			);
 			path = LoginModule;
 			sourceTree = "<group>";
@@ -169,6 +176,29 @@
 			name = ActivityIndicator;
 			path = TaskTracker/ActivityIndicator;
 			sourceTree = SOURCE_ROOT;
+		};
+		AA3F02C525ACCDD7007FCE41 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				AA3F02DF25ACF5EB007FCE41 /* TaskModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		AA3F02C625ACCDE6007FCE41 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		AA3F02C725ACCDEF007FCE41 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				AA3F02C825ACCE02007FCE41 /* DashboardViewConrtroller.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
 		};
 		AAF0B19625A623CB00A44BA9 = {
 			isa = PBXGroup;
@@ -285,6 +315,7 @@
 		AAF0B1E525A626F900A44BA9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA3F02C725ACCDEF007FCE41 /* Dashboard */,
 				AA3F028D25AC802B007FCE41 /* LoginModule */,
 			);
 			path = View;
@@ -293,6 +324,7 @@
 		AAF0B1E625A626FF00A44BA9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AA3F02C625ACCDE6007FCE41 /* Dashboard */,
 				AA3F028E25AC8037007FCE41 /* LoginModule */,
 			);
 			path = ViewModel;
@@ -301,6 +333,7 @@
 		AAF0B1E725A6270D00A44BA9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AA3F02C525ACCDD7007FCE41 /* Dashboard */,
 				AA3F028F25AC803E007FCE41 /* LoginModule */,
 			);
 			path = Model;
@@ -545,11 +578,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3F02C925ACCE02007FCE41 /* DashboardViewConrtroller.swift in Sources */,
 				AAF0B1F425A629FF00A44BA9 /* NetworkLogger.swift in Sources */,
 				AAF0B1E925A629F400A44BA9 /* NetworkConstants.swift in Sources */,
 				AA3F02AA25ACAA1B007FCE41 /* LoginViewModel.swift in Sources */,
 				AAF0B1A725A623CB00A44BA9 /* LoginViewController.swift in Sources */,
 				AAF0B1F325A629FF00A44BA9 /* Network.swift in Sources */,
+				AA3F02D125ACDBD4007FCE41 /* DashboardViewModel.swift in Sources */,
 				AA3F02C125ACC5F6007FCE41 /* Utils.swift in Sources */,
 				AA3F02BB25ACC517007FCE41 /* CustomActivityIndicator.swift in Sources */,
 				AAF0B1A325A623CB00A44BA9 /* AppDelegate.swift in Sources */,
@@ -557,6 +592,7 @@
 				AA3F02A525ACA9A8007FCE41 /* LoginModel.swift in Sources */,
 				AAF0B1F525A629FF00A44BA9 /* Reachability.swift in Sources */,
 				AAF0B1F225A629FF00A44BA9 /* ReachabilityManager.swift in Sources */,
+				AA3F02E025ACF5EB007FCE41 /* TaskModel.swift in Sources */,
 				AAF0B1F625A629FF00A44BA9 /* BasRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

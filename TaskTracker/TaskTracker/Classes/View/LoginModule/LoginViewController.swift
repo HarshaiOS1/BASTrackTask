@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  TaskTracker
 //
-//  Created by wfh on 06/01/21.
+//  Created by Harsha on 06/01/21.
 //
 
 import UIKit
@@ -23,7 +23,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Welcome to BAS Trucks"
         setSegmentSelectedView(segment: 0)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
     }
     
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
@@ -31,7 +36,18 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {
-        
+        CustomActivityIndicator.instance.showLoaderView()
+        logInViewModel.serviceCallForLogin(email: loginEmailTextField.text ?? "", password: loginPasswordTextField.text ?? "") {[weak self] (isLoginSuccess, data) in
+            CustomActivityIndicator.instance.hideLoaderView()
+            if isLoginSuccess {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                if let vc = storyboard.instantiateViewController(withIdentifier: "DashboardViewContrtoller") as? DashboardViewContrtoller {
+                    self?.navigationController?.pushViewController(vc, animated: true)
+                }
+            } else {
+                Utils().showAlert(title: "Error", description: "Error Logging In!, Try again", buttonTitle:"OK", sender: self!)
+            }
+        }
     }
     
     @IBAction func registerButtonAction(_ sender: Any) {
@@ -39,10 +55,12 @@ class LoginViewController: UIViewController {
         logInViewModel.serviceCallForRegister(name: registerEmailTextField.text ?? "", password: registerPasswordTextField.text ?? "", email: registerEmailTextField.text ?? "", age: agePasswordTextField.text ?? "") {[weak self] (isRegisterSuccess, data) in
             CustomActivityIndicator.instance.hideLoaderView()
             if isRegisterSuccess {
-                //Navigate to Dashboard
-            } else {
-                Utils().showAlert(title: "Error", description: "Error Registering, Try again", buttonTitle:"OK", sender: self!)
-            }
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                if let vc = storyboard.instantiateViewController(withIdentifier: "DashboardViewContrtoller") as? DashboardViewContrtoller {
+                    self?.navigationController?.present(vc, animated: true, completion: nil)
+                }            } else {
+                    Utils().showAlert(title: "Error", description: "Error Registering, Try again", buttonTitle:"OK", sender: self!)
+                }
         }
     }
     
