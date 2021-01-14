@@ -30,12 +30,12 @@ class SessionSingleton {
     static let shared = SessionSingleton()
     var network : Network?
     var session: URLSession?
-
+    
     func requestForSession() -> URLSession {
         if let _session = session {
             return _session
         } else {
-            session = URLSession.init(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)//URLSession(configuration: URLSessionConfiguration.default,delegateQueue: nil)
+            session = URLSession.init(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
             return session ?? URLSession.init(configuration: URLSessionConfiguration.default)
         }
     }
@@ -129,11 +129,9 @@ extension Network {
             
             var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
             components.query = query
-            
-            // request = NSMutableURLRequest(url: components.url!, cachePolicy: req.cachePolicy, timeoutInterval: req.timeout) as URLRequest
             request = URLRequest(url: components.url!, cachePolicy: req.cachePolicy, timeoutInterval: req.timeout)
             if !(req.body?.isEmpty ?? true) {
-            let body = try? JSONSerialization.data(withJSONObject: req.body as Any, options: .prettyPrinted)
+                let body = try? JSONSerialization.data(withJSONObject: req.body as Any, options: .prettyPrinted)
                 request?.httpBody = body}
             
             let headers = [ "Content-Type": "application/json" ]

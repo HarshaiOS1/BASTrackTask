@@ -114,7 +114,7 @@ class LoginViewController: UIViewController {
             if isRegisterSuccess {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 if let vc = storyboard.instantiateViewController(withIdentifier: "DashboardViewContrtoller") as? DashboardViewContrtoller {
-                    self?.navigationController?.present(vc, animated: true, completion: nil)
+                    self?.navigationController?.pushViewController(vc, animated: true)
                 }            } else {
                     Utils().showAlert(title: "Error", description: "Error Registering, Try again", buttonTitle:"OK", sender: self!)
                 }
